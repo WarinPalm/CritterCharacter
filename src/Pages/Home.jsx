@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Compenents/Navbar'
-
+import { Link } from 'react-router-dom'
 function Home() {
   return (
     <>
