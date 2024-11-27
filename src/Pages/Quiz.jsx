@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../Compenents/Navbar';
 
 function Quiz() {
@@ -13,9 +13,23 @@ function Quiz() {
         return randomNumber;
     };
 
-    // เริ่มต้นด้วยคำถามแบบสุ่ม
-    const [history, setHistory] = useState([getRandomQuestion()]); // เก็บประวัติคำถาม
-    const [currentIndex, setCurrentIndex] = useState(0); // index ของคำถามปัจจุบัน
+    // โหลดสถานะจาก localStorage ถ้ามี
+    const loadState = () => {
+        const savedHistory = JSON.parse(localStorage.getItem('quizHistory')) || [getRandomQuestion()];
+        const savedIndex = parseInt(localStorage.getItem('quizCurrentIndex'), 10) || 0;
+        return { savedHistory, savedIndex };
+    };
+
+    // เซ็ตสถานะเริ่มต้น
+    const { savedHistory, savedIndex } = loadState();
+    const [history, setHistory] = useState(savedHistory); // เก็บประวัติคำถาม
+    const [currentIndex, setCurrentIndex] = useState(savedIndex); // index ของคำถามปัจจุบัน
+
+    // บันทึกสถานะลง localStorage เมื่อ history หรือ currentIndex เปลี่ยนแปลง
+    useEffect(() => {
+        localStorage.setItem('quizHistory', JSON.stringify(history));
+        localStorage.setItem('quizCurrentIndex', currentIndex);
+    }, [history, currentIndex]);
 
     const NextQuestion = () => {
         // ถ้าตอบครบ 10 ข้อแล้ว
@@ -42,7 +56,6 @@ function Quiz() {
     };
 
     const currentQuestion = history[currentIndex]; // คำถามปัจจุบัน
-    console.log(history)
     return (
         <>
             <Navbar />
