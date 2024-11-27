@@ -1,5 +1,5 @@
 html, body {
-    background-color: #e2f7ff;
+    background-color: #eeffe7;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -7,12 +7,12 @@ html, body {
 }
 
 .btn-custom{
-    background-color: rgb(71, 128, 243);
+    background-color:rgb(10, 181, 33);
     color:white
 }
 
 .btn-custom:hover{
-    background-color: rgb(37, 71, 145);
+    background-color: rgb(2, 67, 25);
     color:white
 }
 
