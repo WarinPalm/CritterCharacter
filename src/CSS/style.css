@@ -1,0 +1,19 @@
+html, body {
+    background-color: #e2f7ff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh; /* เพื่อให้ Container เต็มความสูง */
+}
+.btn-custom{
+    background-color: rgb(71, 128, 243);
+    color:white
+}
+
+.btn-custom:hover{
+    background-color: rgb(37, 71, 145);
+    color:white
+}

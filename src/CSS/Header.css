@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgb(51, 116, 245);
+    height: 7vh;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color:aqua;
+}
+.logo img {
+    width: 200px;
+    height: auto;
+    
+}
+
