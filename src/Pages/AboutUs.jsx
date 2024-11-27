@@ -4,7 +4,9 @@ function AboutUs() {
   return (
     <>  
         <Navbar />
-        <div>AboutUs</div>
+        <div className="container">
+          <h1>AboutUs</h1>
+        </div>
     </>
   )
 }
