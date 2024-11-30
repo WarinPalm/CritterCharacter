@@ -32,22 +32,23 @@ function Quiz() {
     }, [history, currentIndex]);
 
     const NextQuestion = () => {
-        // ถ้าตอบครบ 10 ข้อแล้ว
-        if (history.length === totalQuestions) {
-            alert('คุณตอบครบทุกคำถามแล้ว!');
+        // ถ้าตอบครบ 25 ข้อแล้ว
+        if (history.length === totalQuestions && currentIndex === history.length - 1) {
+            alert('มีคำถามเพียงแค่ 25 ข้อ');
             return;
         }
-
+    
         // ถ้าอยู่ที่คำถามล่าสุด ให้สุ่มคำถามใหม่เตรียมไว้
         if (currentIndex === history.length - 1) {
             const nextQuestion = getRandomQuestion(history);
             setHistory([...history, nextQuestion]); // เพิ่มคำถามใหม่ในประวัติ
             setCurrentIndex(currentIndex + 1); // ไปยังคำถามใหม่
         } else {
-            // ถ้าไม่ได้อยู่คำถามล่าสุด ก็ให้รันตาม index ใน history
+            // ถ้าไม่ได้อยู่คำถามล่าสุด ก็ให้เลื่อนตาม index ใน history
             setCurrentIndex(currentIndex + 1);
         }
     };
+    
 
     const PrevQuestion = () => {
         if (currentIndex > 0) {
