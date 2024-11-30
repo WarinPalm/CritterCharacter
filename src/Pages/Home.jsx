@@ -18,6 +18,9 @@ function Home() {
         // ล้างประวัติและเริ่มใหม่
         localStorage.removeItem('quizHistory');
         localStorage.removeItem('quizCurrentIndex');
+        localStorage.removeItem('visitedIndexes');
+        localStorage.removeItem('answerCount');
+        localStorage.removeItem('point');
         navigate('../quiz');
       }
     } else {
@@ -25,6 +28,7 @@ function Home() {
       navigate('../quiz');
     }
   };
+  
   return (
     <>
       <Navbar />

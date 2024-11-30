@@ -1,12 +1,12 @@
 .navbar{
-    background-color: rgb(2, 67, 25);
+    background-color: #166088;
     height: 7vh;
 }
 .nav-link{
     color: white;
 }
 .nav-link:hover{
-    color:rgb(10, 181, 33);
+    color:#c0d6df;
 }
 .logo img {
     width: 200px;
