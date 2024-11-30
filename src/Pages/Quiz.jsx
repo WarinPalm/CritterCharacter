@@ -51,7 +51,7 @@ function Quiz() {
 
     const PrevQuestion = () => {
         if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1); // ย้อนกลับไปยังคำถามก่อนหน้า
+            setCurrentIndex(currentIndex - 1); // ย้อนกลับไปยังคำถามPrev
         }
     };
 
@@ -75,8 +75,8 @@ function Quiz() {
                         <button className="btn btn-custom w-75 mt-3">Reading a book or solving puzzles.</button>
                         <button className="btn btn-custom w-75 mt-3 mb-3">Relaxing with your favorite shows.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -94,8 +94,8 @@ function Quiz() {
                         <button className="btn btn-custom w-75 mt-3">Use your instincts and make quick decisions.</button>
                         <button className="btn btn-custom w-75 mt-3 mb-3">Step back and let things resolve themselves naturally.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -105,16 +105,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คHow do others describe you?</h1>
+                                <h1>How do others describe you?</h1>
                             </div>
                         </div>
                         <button className="btn btn-custom w-75 mt-3">Playful and full of energy.</button>
                         <button className="btn btn-custom w-75 mt-3">Bold and determined to achieve goals.</button>
                         <button className="btn btn-custom w-75 mt-3">Wise and mysterious.</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Gentle and tolerant.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -124,16 +124,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 4</h1>
+                                <h1>What’s your favorite activity?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Playing games or running around with others.</button>
+                        <button className="btn btn-custom w-75 mt-3">Observing and learning new things.</button>
+                        <button className="btn btn-custom w-75 mt-3">Taking on challenges and risks.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Exploring independently and trying new things.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -143,16 +143,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 5</h1>
+                                <h1>How do you respond to challenges?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Stay calm and think through them logically.</button>
+                        <button className="btn btn-custom w-75 mt-3">Face them boldly and with confidence.</button>
+                        <button className="btn btn-custom w-75 mt-3">Tackle them with a curious and open mind.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Lean on others for support and guidance.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -162,16 +162,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 6</h1>
+                                <h1>What’s your favorite way to spend time with friends?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Discussing meaningful topics or learning something new.</button>
+                        <button className="btn btn-custom w-75 mt-3">Going on adventures or trying something exciting.</button>
+                        <button className="btn btn-custom w-75 mt-3">Relaxing and being playful together.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Being around them but doing your own thing.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -181,16 +181,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 7</h1>
+                                <h1>What’s your reaction to change?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Embrace it and adapt quickly.</button>
+                        <button className="btn btn-custom w-75 mt-3">Think through the implications carefully.</button>
+                        <button className="btn btn-custom w-75 mt-3">Seek stability and minimize disruption.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Welcome the challenge and take risks.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -200,16 +200,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 8</h1>
+                                <h1>What motivates you most?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Achieving goals and being recognized for success.</button>
+                        <button className="btn btn-custom w-75 mt-3">Understanding the world and gaining wisdom.</button>
+                        <button className="btn btn-custom w-75 mt-3">Making others happy and fostering connections.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Exploring new things and satisfying curiosity.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -219,16 +219,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 9</h1>
+                                <h1>What’s your favorite environment?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">A lively, bustling place full of energy.</button>
+                        <button className="btn btn-custom w-75 mt-3">A quiet, peaceful space to reflect.</button>
+                        <button className="btn btn-custom w-75 mt-3">A cozy spot surrounded by loved ones.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">A familiar area where you can be comfortable.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -238,16 +238,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 10</h1>
+                                <h1>What describes your social style?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Outgoing and eager to meet new people.</button>
+                        <button className="btn btn-custom w-75 mt-3">Observant, preferring meaningful conversations.</button>
+                        <button className="btn btn-custom w-75 mt-3">Fun-loving and easygoing.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Ambitious and seeking connections with a purpose.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -257,16 +257,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 11</h1>
+                                <h1>How do you approach goals?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Plan methodically and execute precisely.</button>
+                        <button className="btn btn-custom w-75 mt-3">Stay determined and keep trying until you succeed.</button>
+                        <button className="btn btn-custom w-75 mt-3">Tackle them with enthusiasm and spontaneity.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Focus on achieving results as quickly as possible.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -276,16 +276,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 12</h1>
+                                <h1>What’s your dream vacation?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">An adventurous trip exploring the unknown.</button>
+                        <button className="btn btn-custom w-75 mt-3">A luxurious, fun-filled getaway with friends.</button>
+                        <button className="btn btn-custom w-75 mt-3">A serene retreat to relax and recharge.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">A family-friendly destination with activities for all ages.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -295,16 +295,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 13</h1>
+                                <h1>How do you react under pressure?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Stay calm and logically find a solution.</button>
+                        <button className="btn btn-custom w-75 mt-3">Push through with determination and confidence.</button>
+                        <button className="btn btn-custom w-75 mt-3">Rely on past wisdom and careful thinking.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Seek support and work together with others.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -314,16 +314,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 14</h1>
+                                <h1>How do you feel about rules?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Prefer a structured and logical framework.</button>
+                        <button className="btn btn-custom w-75 mt-3">Respect them but will bend them if needed.</button>
+                        <button className="btn btn-custom w-75 mt-3">Like to find creative ways around them.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Avoid them if they limit your freedom.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -333,16 +333,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 15</h1>
+                                <h1>What’s your greatest strength?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Wisdom and understanding of complex matters.</button>
+                        <button className="btn btn-custom w-75 mt-3">Boldness and determination to achieve goals.</button>
+                        <button className="btn btn-custom w-75 mt-3">Curiosity and enthusiasm for new things.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Gentleness and patience with others.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -352,16 +352,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 16</h1>
+                                <h1>How do you handle group projects?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Take charge and lead the way.</button>
+                        <button className="btn btn-custom w-75 mt-3">Contribute ideas and help where needed.</button>
+                        <button className="btn btn-custom w-75 mt-3">Analyze tasks and ensure efficiency.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Stay in the background but offer support.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -371,16 +371,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 17</h1>
+                                <h1>How do you make decisions?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Trust your instincts and make quick choices.</button>
+                        <button className="btn btn-custom w-75 mt-3">Reflect on options and think them through.</button>
+                        <button className="btn btn-custom w-75 mt-3">Take advice from trusted people.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Go with the flow and let things happen.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -390,16 +390,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 18</h1>
+                                <h1>What’s your communication style?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Direct and assertive in expressing your ideas.</button>
+                        <button className="btn btn-custom w-75 mt-3">Gentle and considerate of others’ feelings.</button>
+                        <button className="btn btn-custom w-75 mt-3">Logical and to the point.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Mysterious and thought-provoking.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -409,16 +409,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 19</h1>
+                                <h1>What’s your ideal work style?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Collaborating and connecting with others.</button>
+                        <button className="btn btn-custom w-75 mt-3">Working independently with a clear plan.</button>
+                        <button className="btn btn-custom w-75 mt-3">Learning new things while enjoying the process.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Helping others achieve their best.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -428,16 +428,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 20</h1>
+                                <h1>How do you relax?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Spending time with loved ones or friends.</button>
+                        <button className="btn btn-custom w-75 mt-3">Enjoying quiet, introspective activities.</button>
+                        <button className="btn btn-custom w-75 mt-3">Exploring hobbies or new interests.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Watching a favorite show or reading.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -447,16 +447,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 21</h1>
+                                <h1>What inspires you?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Discovering and mastering new skills.</button>
+                        <button className="btn btn-custom w-75 mt-3">Making meaningful connections with people.</button>
+                        <button className="btn btn-custom w-75 mt-3">Pushing boundaries and achieving success.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Pushing boundaries and achieving success.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -466,16 +466,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 22</h1>
+                                <h1>How do you handle criticism?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Use it to improve and grow.</button>
+                        <button className="btn btn-custom w-75 mt-3">Consider the advice but stick to your beliefs.</button>
+                        <button className="btn btn-custom w-75 mt-3">Accept it gracefully and move on.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Shrug it off and focus on your goals.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -485,16 +485,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 23</h1>
+                                <h1>What’s your leadership style?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Lead by example with a clear, logical approach.</button>
+                        <button className="btn btn-custom w-75 mt-3">Encourage collaboration and motivate others.</button>
+                        <button className="btn btn-custom w-75 mt-3">Focus on results and assertiveness.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Inspire others with curiosity and independence.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -504,16 +504,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 24</h1>
+                                <h1>What’s your leadership style?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Lead by example with a clear, logical approach.</button>
+                        <button className="btn btn-custom w-75 mt-3">Encourage collaboration and motivate others.</button>
+                        <button className="btn btn-custom w-75 mt-3">Focus on results and assertiveness.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Inspire others with curiosity and independence.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
@@ -523,16 +523,16 @@ function Quiz() {
                     <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative" style={{ height: '100vh' }}>
                         <div className="card w-75 mb-5">
                             <div className="card-body text-center">
-                                <h1>คำถามที่ 25</h1>
+                                <h1>What makes you happiest?</h1>
                             </div>
                         </div>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 1</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 2</button>
-                        <button className="btn btn-custom w-75 mt-3">ตัวเลือกที่ 3</button>
-                        <button className="btn btn-custom w-75 mt-3 mb-3">ตัวเลือกที่ 4</button>
+                        <button className="btn btn-custom w-75 mt-3">Solving a tough problem or learning something new.</button>
+                        <button className="btn btn-custom w-75 mt-3">Sharing love and making others smile.</button>
+                        <button className="btn btn-custom w-75 mt-3">Exploring the unknown and trying new things.</button>
+                        <button className="btn btn-custom w-75 mt-3 mb-3">Achieving a goal or milestone.</button>
                         <div className="d-flex justify-content-between mt-5 w-75">
-                            <button className="btn btn-custom" onClick={PrevQuestion}>ก่อนหน้า</button>
-                            <button className="btn btn-custom" onClick={NextQuestion}>ถัดไป</button>
+                            <button className="btn btn-custom" onClick={PrevQuestion}>Prev</button>
+                            <button className="btn btn-custom" onClick={NextQuestion}>Next</button>
                         </div>
                     </div>
                 )}
