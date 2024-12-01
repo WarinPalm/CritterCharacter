@@ -1,5 +1,5 @@
 html, body {
-    background-color: #c0d6df;
+    background-color: #dbe9ee;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -14,5 +14,11 @@ html, body {
 .btn-custom:hover{
     background-color: #166088;
     color:white
+}
+
+.btn-active{
+    background-color: #00ff88;
+    border: 1px solid black;
+    color: black;
 }
 
