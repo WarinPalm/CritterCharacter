@@ -30,26 +30,30 @@ function Result() {
     return (
         <>
             <Navbar />
-            <div className="container">
-                <h1 className="text-center mt-5 mb-5">You are a {animal}!</h1>
-                <div className="row justify-content-center">
-                    <div className="col-8">
-                        <div className="card">
-                            <div className="card-body text-center">
-                                <p>Your total points: {points}</p>
-                                {animal !== "Neutral" && (
-                                    <img src={`/images/${animal}.png`} alt={animal}className="img-fluid mt-4"/>
-                                )}
-                                {animal === "Neutral" && (
-                                    <p className="mt-4">
-                                        Unfortunately, your points are too low to match an animal. Better luck next time!
-                                    </p>
-                                )}
-                            </div>
+            <div className="d-flex flex-column align-items-center justify-content-center position-relative"
+                style={{ minHeight: "100vh", backgroundImage: "url('/bg.png')", backgroundSize: "cover", backgroundPosition: "center", }}>
+                
+                <div className="w-75">
+                    <div className="card bg-white bg-opacity-75 shadow-lg" style={{ maxHeight: "90vh", overflowY: "auto" }}>
+                        <div className="card-body text-center">
+                            <h1 className="text-center mt-3 mb-3">You are a {animal}!</h1>
+                            <p>Your total points: {points}</p>
+                            {animal !== "Neutral" && (
+                                <img src={`/${animal}.png`} alt={animal} className="img-fluid mb-3"style={{ maxWidth: "100%", maxHeight: "400px", objectFit: "cover" }}/>
+                            )}
+                            {animal === "Neutral" && (
+                                <p className="mt-2">
+                                    Unfortunately, your points are too low to match an animal. Better
+                                    luck next time!
+                                </p>
+                            )}
+                            <p></p>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </>
     );
 }

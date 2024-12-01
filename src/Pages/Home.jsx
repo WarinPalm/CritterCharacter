@@ -29,16 +29,20 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="container-fluid d-flex flex-column justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
-        <div className="text-center">
-          <h1 className="display-4 fw-bold text-primary mb-4"> Discover Your Wild Personality </h1>
-          <p className="lead text-secondary mb-4">
+      <div className="d-flex align-items-center justify-content-center bg-cover text-center"
+        style={{ minHeight: "100vh", backgroundImage: "url('/bg.png')", backgroundSize: "cover", backgroundPosition: "center",}}>
+        <div className="bg-white bg-opacity-75 p-5 rounded shadow-lg w-75">
+          <h1 className="display-4 fw-bold text-primary mb-4">
+            Discover Your Wild Personality
+          </h1>
+          <p className="lead text-black fw-semibold mb-4">
             Dive into an exciting journey to discover which animal matches your
             personality the most. Are you ready to unleash your wild side?
           </p>
-          <button className="btn btn-custom btn-lg px-5 py-3 mb-3 shadow" onClick={handleStartQuiz}> Start the Animal Quiz</button>
+          <button className="btn btn-primary btn-lg px-5 py-3 shadow" onClick={handleStartQuiz}>
+            Start the Animal Quiz
+          </button>
         </div>
-        
       </div>
     </>
   );

@@ -92,15 +92,17 @@ function Quiz() {
     return (
         <>
             <Navbar />
-            <div className="container d-flex flex-column align-items-center">
-                <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative"style={{ height: "100vh" }}>
+            <div className="d-flex flex-column align-items-center">
+                <div className="w-100 d-flex flex-column justify-content-center align-items-center position-relative"
+                style={{ minHeight: "100vh", backgroundImage: "url('/bg-quiz.png')", backgroundSize: "cover", backgroundPosition: "center",}}>
+                    
                     <div className="card w-75 mb-5">
                         <div className="card-body text-center">
                             <h1>{currentQuestion.question}</h1>
                         </div>
                     </div>
                     {currentQuestion.answers.map((answer, index) => (
-                        <button key={index} className={`btn btn-custom w-75 mt-3 ${currentAnswer === answer.points ? "btn-active" : ""}`}
+                        <button key={index} className={`btn btn-custom fw-semibold w-75 mt-3 ${currentAnswer === answer.points ? "btn-active" : ""}`}
                             onClick={() => handleAnswer(answer.points)}>
                             {answer.text}
                         </button>
