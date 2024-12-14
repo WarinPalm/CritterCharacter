@@ -249,6 +249,57 @@ const questions = [
             { text: "Achieving a goal or milestone.", points: 1 },
         ],
     },
+    {
+        id: 26,
+        question: "How do you feel after spending time with a group of people?",
+        answers: [
+            { text: "Energized and excited for more socializing.", points: 4 },
+            { text: "A little tired but content with the experience.", points: 3 },
+            { text: "Drained and in need of alone time to recharge", points: 2 },
+            { text: "Inspired to pursue your own creative ideas.", points: 1 },
+        ],
+    },
+    {
+        id: 27,
+        question: "How do you respond to unfamiliar ideas or philosophies?",
+        answers: [
+            { text: "Approach them with curiosity and an open mind.", points: 4 },
+            { text: "Consider them carefully before forming an opinion.", points: 3 },
+            { text: "Stick to familiar perspectives unless convinced otherwise.", points: 2 },
+            { text: "Feel hesitant but willing to explore if necessary.", points: 1 },
+        ],
+    },
+    {
+        id: 28,
+        question: "How do you feel when someone disagrees with you?",
+        answers: [
+            { text: "Try to understand their perspective but share your own calmly.", points: 4 },
+            { text: "Avoid conflict and quietly agree, even if you don’t fully agree.", points: 3 },
+            { text: "Hold your ground and respectfully argue your point.", points: 2 },
+            { text: "Seek common ground to maintain harmony.", points: 1 },
+        ],
+    },
+    {
+        id: 29,
+        question: "If you see someone struggling, how likely are you to help?",
+        answers: [
+            { text: "Offer help immediately, even to strangers.", points: 4 },
+            { text: "Assess the situation and offer help if it’s feasible.", points: 3 },
+            { text: "Help if it aligns with your current priorities or interests.", points: 2 },
+            { text: "Prefer to stay uninvolved unless asked directly.", points: 1 },
+        ],
+    },
+    {
+        id: 30,
+        question: "How do you feel about social interactions and group activities?",
+        answers: [
+            { text: "Thrive in social settings and enjoy energizing the group.", points: 4 },
+            { text: "Enjoy them in moderation, preferring meaningful connections.", points: 3 },
+            { text: "Participate when necessary but prefer independence.", points: 2 },
+            { text: "Feel drained and prefer small, quiet gatherings.", points: 1 },
+        ],
+    }
+    
 ];
 
 export default questions;
