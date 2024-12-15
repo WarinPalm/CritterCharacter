@@ -63,12 +63,12 @@ function Quiz() {
 
     // ไปคำถามถัดไป
     const NextQuestion = () => {
-        if (currentIndex === totalQuestions - 1) { //ถ้าถึงคำตอบที่ 25 
+        if (currentIndex === totalQuestions - 1) { //ถ้าถึงคำตอบที่ 30
             alert("You have reached the last question!");
             return;
         }
 
-        if (currentIndex === history.length - 1) { //ถ้ายังไม่ถึงคำตอบที่ 25
+        if (currentIndex === history.length - 1) { //ถ้ายังไม่ถึงคำตอบที่ 30
             const nextQuestion = getRandomQuestion(history); // สุ่มคำถามใหม่
             setHistory([...history, nextQuestion]); //เพิ่มคำถามใหม่ลงใน array ของ history 
             setCurrentIndex(history.length); // ไปยังคำถามใหม่
